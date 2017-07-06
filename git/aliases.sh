@@ -1,0 +1,6 @@
+git config --global alias.ln '!sh -c "git config --global \"alias.$1\" \"$2\""'
+git ln aliases 'config --get-regexp alias'
+git ln last 'log --date=iso8601 --stat -1'
+git ln ls 'log --pretty=format:\"%C(yellow)%h%C(red)%d %C(reset)%s%C(blue) [%cn]\" --decorate'
+git ln ldr 'log --pretty=format:\"%C(yellow)%h %ad%C(red)%d %C(reset)%s%C(blue) [%cn]\" --decorate --date=relative'
+git ln ld 'log --pretty=format:\"%C(yellow)%h (%ad)%C(red)%d %C(reset)%s%C(blue) [%cn]\" --decorate --date=iso8601'
