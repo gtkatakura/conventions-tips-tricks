@@ -11,7 +11,7 @@ git ln last 'log --date=iso8601 --stat -1'
 git ln ls 'log --pretty=format:\"%C(yellow)%h %C(reset)%s%C(blue) [%cn]%C(red)%d\"'
 git ln ldr 'log --pretty=format:\"%C(yellow)%h %ad %C(reset)%s%C(blue) [%cn]%C(red)%d\" --date=relative'
 git ln ld 'log --pretty=format:\"%C(yellow)%h (%ad) %C(reset)%s%C(blue) [%cn]%C(red)%d\" --date=iso8601'
-git ln tree 'ls --graph'
+git ln tree '!git ls --graph'
 
 git ln ammend 'commit --amend -C HEAD'
 git ln undo 'reset HEAD~1'
