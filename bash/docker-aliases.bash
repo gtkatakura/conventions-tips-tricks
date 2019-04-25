@@ -1,4 +1,6 @@
-alias dc='docker-compose '
+alias dc='docker-compose'
 alias dcu='dc up'
 alias dcd='dc down'
 alias dcs='dc stop'
+alias dcr='dc run'
+alias dcrr='dc run --rm'
