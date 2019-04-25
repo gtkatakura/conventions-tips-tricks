@@ -7,7 +7,7 @@ echo
 echo 'Creating ~/.termscripts'
 mkdir -p ~/.termscripts
 
-bash_files=(docker-aliases git-aliases prompt)
+bash_files=(docker-aliases flatpak-aliases git-aliases prompt)
 
 for bash_file in ${bash_files[@]}; do
   filename="$HOME/$bash_file"
