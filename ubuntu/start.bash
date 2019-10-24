@@ -105,6 +105,7 @@ flatpak install flathub com.spotify.Client -y
 # install slack
 green_text "Installing Slack (using flatpak)"
 flatpak install flathub com.slack.Slack -y
+flatpak override --user --env=TZ=America/Sao_Paulo com.slack.Slack
 
 # install dbeaver
 green_text "Installing DBeaver (using flatpak)"
