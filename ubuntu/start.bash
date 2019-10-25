@@ -156,6 +156,10 @@ sudo source $HOME/.asdf/asdf.sh
 green_text "Adding ruby to asdf"
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
+# install build-essential
+green_text "Installing build-essential (using apt)"
+sudo apt install build-essential -y
+
 # install asdf-nodejs
 green_text "Adding nodedjs to asdf"
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
