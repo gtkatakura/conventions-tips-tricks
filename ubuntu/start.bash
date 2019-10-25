@@ -150,15 +150,19 @@ green_text "Installing asdf"
 echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 
+# install build-essential
+green_text "Installing build-essential (using apt)"
+sudo apt install build-essential -y
+
+# install libssl-dev + libreadline-dev + zlib1g-dev
+green_text "Installing libssl-dev + libreadline-dev + zlib1g-dev (using apt)"
+sudo apt install -y libssl-dev libreadline-dev zlib1g-dev -y
+
 sudo source $HOME/.asdf/asdf.sh
 
 # install asdf-ruby
 green_text "Adding ruby to asdf"
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-
-# install build-essential
-green_text "Installing build-essential (using apt)"
-sudo apt install build-essential -y
 
 # install asdf-nodejs
 green_text "Adding nodedjs to asdf"
