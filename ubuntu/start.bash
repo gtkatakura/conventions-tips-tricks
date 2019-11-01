@@ -132,6 +132,10 @@ sudo ln -s /snap/bin/docker /usr/local/bin/docker
 green_text "Installing Discord (using snap)"
 sudo snap install discord
 
+# install telegram
+green_text "Installing Telegram (using snap)"
+sudo snap install telegram-desktop
+
 green_text "Configuring docker"
 sudo groupadd docker
 sudo usermod -aG docker $USER
