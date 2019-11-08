@@ -35,7 +35,7 @@ blue_text "Configuring .termscripts"
 mkdir -p ~/.termscripts
 cp -r $root_dir/bash ~/.termscripts
 
-if ! $(grep "for f in ~/.termscripts/bash/*; do source $f; done" $HOME/.bashrc &>/dev/null); then
+if ! $(grep "for f in ~/.termscripts/bash/*; do source \$f; done" $HOME/.bashrc &>/dev/null); then
   echo "Adding 'for f in ~/.termscripts/bash/*; do source \$f; done' to $HOME/.bashrc"
   echo "for f in ~/.termscripts/bash/*; do source \$f; done" >> $HOME/.bashrc
 fi
@@ -107,6 +107,11 @@ green_text "Installing Slack (using flatpak)"
 flatpak install flathub com.slack.Slack -y
 flatpak override --user --env=TZ=America/Sao_Paulo com.slack.Slack
 
+# como nao temos mais horario de verao, estou usando temporariamente
+# esse TZ para o horario ficar correto, visto que o slack esta colocando
+# +1hr como o horario de verao, entao preciso de um TZ com -1hr
+# flatpak override --user --env=TZ=America/Campo_Grande com.slack.Slack
+
 # install dbeaver
 green_text "Installing DBeaver (using flatpak)"
 flatpak install flathub io.dbeaver.DBeaverCommunity -y
@@ -139,6 +144,7 @@ sudo snap install telegram-desktop
 green_text "Configuring docker"
 sudo groupadd docker
 sudo usermod -aG docker $USER
+# https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
 
 # install docker-compose
 green_text "Installing docker-compose@1.24.0"
