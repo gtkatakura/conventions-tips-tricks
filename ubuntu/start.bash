@@ -95,8 +95,8 @@ green_text "Adding flathub to flatpak"
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # install vscode
-green_text "Installing Visual Studio Code (using snap)"
-sudo snap install code --classic
+# green_text "Installing Visual Studio Code (using snap)"
+# sudo snap install code --classic
 
 # install spotify
 green_text "Installing Spotify (using flatpak)"
@@ -129,9 +129,9 @@ green_text "Installing Heroku (using snap)"
 sudo snap install --classic heroku
 
 # install docker
-green_text "Installing docker (using snap)"
-sudo snap install docker
-sudo ln -s /snap/bin/docker /usr/local/bin/docker
+# green_text "Installing docker (using snap)"
+# sudo snap install docker
+# sudo ln -s /snap/bin/docker /usr/local/bin/docker
 
 # install discord
 green_text "Installing Discord (using snap)"
