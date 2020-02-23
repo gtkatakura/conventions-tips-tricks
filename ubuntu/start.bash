@@ -58,6 +58,7 @@ sudo apt install pavucontrol -y
 # sudo apt install indicator-multiload -y
 
 # install indicator-sysmonitor (apt)
+# Preferences -> Advanced -> Customize output: cpu: {cpu} mem: {mem} cputemp: {cputemp}
 green_text "Installing indicator-sysmonitor (using apt)"
 sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
 sudo apt update
@@ -176,7 +177,7 @@ green_text "Adding ruby to asdf"
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
 # install asdf-nodejs
-green_text "Adding nodedjs to asdf"
+green_text "Adding nodejs to asdf"
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
