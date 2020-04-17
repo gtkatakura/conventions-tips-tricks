@@ -48,6 +48,10 @@ sudo apt install vim -y
 green_text "Installing curl (using apt)"
 sudo apt install curl -y
 
+# install jq
+green_text "Installing jq (using apt)"
+sudo apt install jq -y
+
 # install pavucontrol
 green_text "Installing pavucontrol (using apt)"
 sudo apt install pavucontrol -y
