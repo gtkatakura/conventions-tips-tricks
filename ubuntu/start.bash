@@ -129,6 +129,10 @@ flatpak install flathub us.zoom.Zoom -y
 green_text "Installing Postman (using flatpak)"
 flatpak install flathub com.getpostman.Postman
 
+# install postman
+green_text "Installing Insomnia (using snap)"
+sudo snap install insomnia
+
 # install heroku
 green_text "Installing Heroku (using snap)"
 sudo snap install --classic heroku
