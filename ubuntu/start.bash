@@ -122,8 +122,8 @@ green_text "Installing DBeaver (using flatpak)"
 flatpak install flathub io.dbeaver.DBeaverCommunity -y
 
 # install zoom
-green_text "Installing Zoom (using flatpak)"
-flatpak install flathub us.zoom.Zoom -y
+green_text "Installing Zoom (using snap)"
+sudo snap install zoom-client
 
 # install postman
 green_text "Installing Postman (using flatpak)"
