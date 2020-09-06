@@ -1,4 +1,6 @@
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove
-# sudo apt list --upgradable
+sudo apt update
+sudo apt upgrade --autoremove -y
+
 sudo flatpak update -y
+
 sudo snap refresh
