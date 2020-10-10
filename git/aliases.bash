@@ -12,3 +12,6 @@ git ln amend 'commit --amend -C HEAD'
 git ln undo 'reset HEAD~1'
 git ln publish '!git push -u origin \$(git branch-name)'
 git ln unpublish '!git push origin :\$(git branch-name)'
+
+git config --global user.signingkey BE504937D85D9EB8
+git config --global commit.gpgsign true
