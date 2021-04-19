@@ -1,3 +1,4 @@
+alias gp='git pull'
 alias gs='git status'
 alias ga='git add'
 alias gr='git reset'
