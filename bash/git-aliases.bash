@@ -15,7 +15,7 @@ function gor {
 }
 
 function gom {
-  gb | grep -E 'main|master' | sed -e s/\*//g | xargs git checkout
+  gb | grep -E '^\s*(main|master)\s*$' | sed -e s/\*//g | xargs git checkout
 }
 
 export GIT_EDITOR='vim'
