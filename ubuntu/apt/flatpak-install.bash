@@ -1,3 +1,8 @@
+# step only necessary for Ubuntu 18.04
+blue_text "Adding ppa:alexlarsson/flatpak to apt repositories"
+sudo add-apt-repository ppa:alexlarsson/flatpak
+sudo apt update
+
 green_text "Installing flatpak (using apt)"
 sudo apt install flatpak -y
 
