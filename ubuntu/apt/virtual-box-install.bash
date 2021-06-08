@@ -7,3 +7,7 @@ sudo apt update
 
 green_text "Installing virtualbox (using apt)"
 sudo apt install virtualbox -y
+
+# ref: https://askubuntu.com/questions/533071/virtualbox-4-12-shared-clipboard-not-working-in-ubuntu14-04
+# green_text "Installing virtualbox-guest-dkms"
+# sudo apt-get install virtualbox-guest-dkms
