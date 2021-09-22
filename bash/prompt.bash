@@ -8,7 +8,7 @@ function parse_git_branch {
 
 function get_vtex_io_info {
   function get_vtex_json {
-    cat $HOME/.config/configstore/vtex.json
+    cat "$HOME"/.config/configstore/vtex.json
   }
 
   function get_vtex_account {
@@ -20,7 +20,7 @@ function get_vtex_io_info {
   }
 
   if [ -d .git ]; then
-    if [[ $(git remote -v) =~ "github.com/vtex" ]]; then
+    if [[ $(git remote -v) =~ github\.com\/vtex ]] && [ -f "$HOME/.config/configstore/vtex.json" ]; then
       echo "[$(get_vtex_account)/$(get_vtex_workspace)] "
     fi
   fi
