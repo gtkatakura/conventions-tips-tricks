@@ -1,4 +1,5 @@
 COLOR_OFF="\[\033[0m\]"
+BLUE="\[\033[0;34m\]"
 GREEN="\[\033[0;32m\]"
 YELLOW="\[\033[0;33m\]"
 
@@ -20,7 +21,7 @@ function get_vtex_io_info {
   }
 
   if [ -d .git ]; then
-    if [[ $(git remote -v) =~ github\.com\/vtex ]] && [ -f "$HOME/.config/configstore/vtex.json" ]; then
+    if [[ $(git remote -v) =~ "github.com/vtex" ]] && [ -f "$HOME/.config/configstore/vtex.json" ]; then
       echo "[$(get_vtex_account)/$(get_vtex_workspace)] "
     fi
   fi
