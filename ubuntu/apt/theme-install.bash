@@ -39,3 +39,4 @@ sudo apt install gnome-tweak-tool -y
 
 # sudo apt-get install chrome-gnome-shell
 # https://extensions.gnome.org/extension/841/freon/
+# https://extensions.gnome.org/extension/750/openweather/
