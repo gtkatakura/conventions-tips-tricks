@@ -5,4 +5,4 @@ sudo apt update
 green_text "Installing indicator-sysmonitor (using apt)"
 sudo apt install indicator-sysmonitor -y
 
-# TODO: Preferences -> Advanced -> Customize output: cpu: {cpu} mem: {mem} cputemp: {cputemp}
+# TODO: Preferences -> Advanced -> Customize output: cpu: {cpu} mem: {mem} nvgpu: {nvgpu} cputemp: {cputemp}
