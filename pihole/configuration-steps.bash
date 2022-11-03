@@ -1,5 +1,3 @@
-dcu
-
 # sudo lsof -i -P -n | grep 67
 # sudo lsof -i -P -n | grep 53
 
