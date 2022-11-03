@@ -15,11 +15,11 @@ source ~/.bashrc
 green_text "Installing watchman (using brew)"
 # brew install watchman
 
-green_text "Installing qemu-kvm (using apt)"
-sudo apt install qemu-kvm -y
+# green_text "Installing qemu-kvm (using apt)"
+# sudo apt install qemu-kvm -y
 
 # https://stackoverflow.com/questions/37300811/android-studio-dev-kvm-device-permission-denied/45749003
 # ref: https://blog.chirathr.com/android/ubuntu/2018/08/13/fix-avd-error-ubuntu-18-04/
-sudo adduser $USER kvm
+# sudo adduser $USER kvm
 # sudo mkdir -p /dev/kvm
 # sudo setfacl -m u:$USER:rwx /dev/kvm
