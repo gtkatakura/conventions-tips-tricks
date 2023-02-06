@@ -21,7 +21,8 @@ function get_vtex_io_info {
   }
 
   if [ -d .git ]; then
-    if [[ $(git remote -v) =~ "github.com/vtex" ]] && [ -f "$HOME/.config/configstore/vtex.json" ]; then
+    # [ $(git remote -v) =~ "github.com/vtex" ]
+    if [ -f "$HOME/.config/configstore/vtex.json" ] && [ "$(get_vtex_account)" != "null" ]; then
       echo "[$(get_vtex_account)/$(get_vtex_workspace)] "
     fi
   fi
