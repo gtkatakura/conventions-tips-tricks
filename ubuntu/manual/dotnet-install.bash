@@ -13,10 +13,10 @@ rm packages-microsoft-prod.deb
 #   dotnet-runtime-3.1 \
 #   aspnetcore-runtime-3.1 -y
 
-green_text "Installing dotnet (sdk-5.0, runtime-5.0, aspnetcore-runtime-5.0)"
+green_text "Installing dotnet (sdk-7.0, runtime-7.0, aspnetcore-runtime-7.0)"
 sudo apt-get update
 sudo apt-get install \
   apt-transport-https \
-  dotnet-sdk-5.0 \
-  dotnet-runtime-5.0 \
-  aspnetcore-runtime-5.0 -y
+  dotnet-sdk-7.0 \
+  dotnet-runtime-7.0 \
+  aspnetcore-runtime-7.0 -y
