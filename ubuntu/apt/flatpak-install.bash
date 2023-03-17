@@ -10,4 +10,5 @@ green_text "Installing gnome-software-plugin-flatpak (using apt)"
 sudo apt install gnome-software-plugin-flatpak -y
 
 green_text "Adding flathub to flatpak"
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo --if-not-exists
+# sudo flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo --user --if-not-exists
