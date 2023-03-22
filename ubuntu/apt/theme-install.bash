@@ -29,14 +29,15 @@ gnome-shell-extension-tool -e "user-theme@gnome-shell-extensions.gcampax.github.
 gsettings set org.gnome.shell.extensions.user-theme name "Flat-Remix-Dark-fullPanel"
 
 # TODO: move to another script
-green_text "Installing gnome-tweak-tool (using apt)"
-sudo apt install gnome-tweak-tool -y
+# green_text "Installing gnome-tweak-tool (using apt)"
+# sudo apt install gnome-tweak-tool -y
 
 # gnome-shell-extension-tool -e "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
 # gnome-shell-extension-tool -e "places-menu@gnome-shell-extensions.gcampax.github.com"
 # gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 # gsettings set org.gnome.shell.extensions.dash-to-dock dock-position "RIGHT"
 
+# TODO: automation for these steps
 # sudo apt-get install chrome-gnome-shell
 # https://extensions.gnome.org/extension/841/freon/
 # https://extensions.gnome.org/extension/750/openweather/

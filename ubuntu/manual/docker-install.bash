@@ -1,33 +1,24 @@
-# ref https://docs.docker.com/install/linux/docker-ce/ubuntu/
-
-# sudo apt-get remove docker docker-engine docker.io containerd runc
-
-# sudo apt-get update
+# https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 green_text "Installing prerequisites for docker"
 sudo apt-get install \
-  apt-transport-https \
   ca-certificates \
   curl \
-  gnupg-agent \
-  software-properties-common -y
+  gnupg \
+  lsb-release
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+blue_text "Adds GPG key (docker)"
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-sudo apt-key fingerprint 0EBFCD88
-
-sudo add-apt-repository \
-  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) \
-  stable"
-
-sudo apt-get update
+blue_text "Setting up the repository (docker)"
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
+  | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 green_text "Installing docker"
+sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
 blue_text "Configuring group for docker"
 sudo groupadd docker -f
-sudo usermod -aG docker $USER
-
-# https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
+sudo usermod -aG docker "$USER"
