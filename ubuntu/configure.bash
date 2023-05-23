@@ -7,3 +7,6 @@ gnome-shell-extension-tool -e "workspace-indicator@gnome-shell-extensions.gcampa
 gnome-shell-extension-tool -e "places-menu@gnome-shell-extensions.gcampax.github.com"
 
 sudo sysctl fs.inotify.max_user_watches=524288
+
+# https://unix.stackexchange.com/questions/692237/ctrl-displays-e-character-and-captures-the-keyboard-shortcut
+gsettings set org.freedesktop.ibus.panel.emoji hotkey "[]"
