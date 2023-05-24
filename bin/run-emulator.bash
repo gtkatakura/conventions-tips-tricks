@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PS3='Please enter your choice: '
-devices=$("$ANDROID_HOME"/emulator/emulator -list-avds)
+mapfile -t devices < <("$ANDROID_HOME"/emulator/emulator -list-avds)
 option=$1
 
 if [ -n "$option" ]; then
