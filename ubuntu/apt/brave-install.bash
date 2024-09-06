@@ -8,6 +8,6 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/brave-browser.gpg] https://brave-browser-apt-release.s3.brave.com stable main" \
   | sudo tee /etc/apt/sources.list.d/brave-browser.list > /dev/null
 
-green_text "Installing docker"
+green_text "Installing brave-browser"
 sudo apt-get update
 sudo apt-get install brave-browser -y
