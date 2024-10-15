@@ -1,0 +1,10 @@
+#!/bin/bash
+# shellcheck source=/dev/null
+
+source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/aliases.sh
+source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/keyboard.sh
+source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/prompt.sh
+source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/shell.sh
+
+# Fixes for AWS VPN Client
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
