@@ -1,5 +1,5 @@
-### Setting ambient for Ubuntu
+### Setting ambient for Ubuntu 24.04
 
 ```bash
-$ wget https://raw.githubusercontent.com/gtkatakura/conventions-tips-tricks/master/ubuntu/install.bash -q -O - | bash
+wget -qO- https://raw.githubusercontent.com/gtkatakura/conventions-tips-tricks/master/ubuntu-24_04/boot.sh | bash
 ```
