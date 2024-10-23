@@ -9,5 +9,7 @@ source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/shell.sh
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/android.sh
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/brew.sh
 
+source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/dotnet.sh
+
 # Fixes for AWS VPN Client
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
