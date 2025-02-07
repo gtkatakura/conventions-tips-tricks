@@ -33,3 +33,20 @@ gsettings set org.gnome.shell.extensions.tophat network-usage-unit bits
 
 # Install new extensions
 gext install openweather-extension@jenslody.de
+
+# Configure favorite apps
+gsettings set org.gnome.shell favorite-apps \
+  "['brave-browser.desktop', \
+    'Alacritty.desktop', \
+    'cursor.desktop', \
+    'spotify.desktop', \
+    'io.dbeaver.DBeaverCommunity.desktop', \
+    'Zoom.desktop', \
+    'md.obsidian.Obsidian.desktop', \
+    'Activity.desktop', \
+    'Docker.desktop', \
+    'Omakub.desktop', \
+    '1password.desktop', \
+    'org.gnome.Settings.desktop', \
+    'org.gnome.Nautilus.desktop', \
+    'localsend_app.desktop']"
