@@ -54,3 +54,11 @@ alias eas='npx eas'
 function checkip {
   curl -s https://checkip.amazonaws.com
 }
+
+function reload() {
+  # shellcheck disable=SC1090
+  source ~/.bashrc
+}
+
+alias r='reload'
+alias rr='reload && reset'
