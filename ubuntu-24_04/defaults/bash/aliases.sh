@@ -42,8 +42,8 @@ alias dcrr='dc run --rm'
 alias dcb='dcrr --service-ports'
 alias rdocker='sudo service docker restart'
 
-# Mise aliases
-alias m='mise'
+# Make aliases
+alias m='make'
 
 # Node.js aliases
 alias y='yarn'
