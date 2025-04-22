@@ -5,7 +5,7 @@ curl -fsSL https://d20adtppz83p9s.cloudfront.net/GTK/latest/debian-repo/awsvpncl
 
 blue_text "Setting up the repository (awsvpnclient)"
 echo \
-  "deb [arch=amd64 signed-by=/etc/apt/keyrings/awsvpnclient.gpg] https://d20adtppz83p9s.cloudfront.net/GTK/latest/debian-repo ubuntu-20.04 main" \
+  "deb [arch=amd64 signed-by=/etc/apt/keyrings/awsvpnclient.gpg] https://d20adtppz83p9s.cloudfront.net/GTK/latest/debian-repo ubuntu main" \
   | sudo tee /etc/apt/sources.list.d/awsvpnclient.list > /dev/null
 
 green_text "Installing awsvpnclient (using apt)"
