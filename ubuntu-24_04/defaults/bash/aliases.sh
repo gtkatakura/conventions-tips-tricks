@@ -62,4 +62,4 @@ function reload() {
 }
 
 alias r='reload'
-alias rr='reload && reset'
+alias rr='reset && reload'
