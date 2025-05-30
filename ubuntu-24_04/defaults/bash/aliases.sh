@@ -63,3 +63,9 @@ function reload() {
 
 alias r='reload'
 alias rr='reset && reload'
+
+function killport() {
+  fuser -k "$1"/tcp
+}
+
+alias kp='killport'
