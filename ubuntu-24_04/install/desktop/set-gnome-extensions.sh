@@ -11,6 +11,9 @@ gsettings set org.gnome.shell.extensions.tactile col-2 1
 gsettings set org.gnome.shell.extensions.tactile col-3 1
 gsettings set org.gnome.shell.extensions.tactile gap-size 0
 
+# Disable <Super>P to switch monitor
+gsettings set org.gnome.mutter.keybindings switch-monitor "['XF86Display']"
+
 # Use super for workspaces
 # Preference for the numpad keys
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>KP_1']"
