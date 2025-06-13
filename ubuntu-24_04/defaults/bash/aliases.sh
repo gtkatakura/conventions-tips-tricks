@@ -9,6 +9,7 @@ function cursor {
 }
 
 alias code='cursor'
+alias c='cursor .'
 
 # Git aliases
 alias gp='git pull'
@@ -30,6 +31,14 @@ function gor {
 
 function gom {
   gb | grep -E '^\s*(main|master)\s*$' | sed -e s/\*//g | xargs git checkout
+}
+
+function w {
+  if gh pr view >/dev/null 2>&1; then
+    gh pr view --web
+  else
+    gh repo view --web
+  fi
 }
 
 # Docker aliases
@@ -69,3 +78,4 @@ function killport() {
 }
 
 alias kp='killport'
+alias e=exit
