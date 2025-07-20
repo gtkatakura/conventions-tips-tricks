@@ -16,4 +16,13 @@ green_text() {
   echo -e "\e[32m$*\e[39m"
 }
 
+function update_all() {
+  sudo apt update
+  sudo apt upgrade --autoremove -y
+
+  sudo flatpak update -y
+
+  sudo snap refresh
+}
+
 export GIT_EDITOR='vim'
