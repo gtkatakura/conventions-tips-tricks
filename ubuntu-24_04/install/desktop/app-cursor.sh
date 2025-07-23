@@ -10,7 +10,7 @@ sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 
 green_text "Downloading Cursor (AppImage)"
 cursor_download_link=$(
-  curl -s 'https://www.cursor.com/api/download?platform=linux-x64&releaseTrack=stable' \
+  curl -sL 'https://www.cursor.com/api/download?platform=linux-x64&releaseTrack=stable' \
     -H 'content-type: application/json' \
   | jq -r '.downloadUrl'
 )
