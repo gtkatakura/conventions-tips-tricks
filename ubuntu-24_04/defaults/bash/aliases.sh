@@ -4,9 +4,11 @@
 alias awslocal="AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test AWS_DEFAULT_REGION=${DEFAULT_REGION:-$AWS_DEFAULT_REGION} aws --endpoint-url=http://${LOCALSTACK_HOST:-localhost}:4566"
 
 # Cursor aliases
-function cursor {
-  (nohup /opt/cursor.appimage --no-sandbox "$@" > /dev/null 2>&1 &)
-}
+if ! command -v cursor >/dev/null 2>&1; then
+  function cursor {
+    (nohup /opt/cursor.appimage --no-sandbox "$@" > /dev/null 2>&1 &)
+  }
+fi
 
 alias code='cursor'
 alias c='cursor .'
