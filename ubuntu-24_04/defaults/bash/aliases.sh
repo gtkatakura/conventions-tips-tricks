@@ -6,7 +6,11 @@ alias awslocal="AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test AWS_DEFAULT_RE
 # Cursor aliases
 if ! command -v cursor >/dev/null 2>&1; then
   function cursor {
-    (nohup /opt/cursor.appimage --no-sandbox "$@" > /dev/null 2>&1 &)
+    if [[ $1 =~ ^cursor:// ]]; then
+      (nohup /opt/cursor.appimage --no-sandbox --open-url "$1" > /dev/null 2>&1 &)
+    else
+      (nohup /opt/cursor.appimage --no-sandbox "$@" > /dev/null 2>&1 &)
+    fi
   }
 fi
 

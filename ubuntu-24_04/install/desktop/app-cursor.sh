@@ -29,4 +29,23 @@ Exec=/opt/cursor.appimage --no-sandbox %U
 Icon=/home/$USER/.local/share/takashi/ubuntu-24_04/applications/icons/cursor.png
 Type=Application
 Categories=Development;
+MimeType=x-scheme-handler/cursor;
 EOF
+
+green_text "Creating cursor:// protocol handler"
+sudo touch /usr/share/applications/cursor-url-handler.desktop
+
+green_text "Configuring cursor:// protocol handler"
+cat <<EOF | sudo tee /usr/share/applications/cursor-url-handler.desktop
+[Desktop Entry]
+Name=Cursor URL Handler
+Exec=/opt/cursor.appimage --no-sandbox --open-url %u
+Icon=/home/$USER/.local/share/takashi/ubuntu-24_04/applications/icons/cursor.png
+Type=Application
+NoDisplay=true
+MimeType=x-scheme-handler/cursor;
+EOF
+
+green_text "Updating desktop database and registering protocol"
+sudo update-desktop-database /usr/share/applications/
+sudo xdg-mime default cursor-url-handler.desktop x-scheme-handler/cursor
