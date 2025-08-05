@@ -8,6 +8,6 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" \
   | sudo tee /etc/apt/sources.list.d/charm.list > /dev/null
 
-green_text "Installing crush"
+green_text "Installing charm tools"
 sudo apt update
-sudo apt install crush -y
+sudo apt install crush freeze mods sequin vhs -y
