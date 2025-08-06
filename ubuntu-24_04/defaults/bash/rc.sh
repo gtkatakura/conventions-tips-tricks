@@ -1,6 +1,8 @@
 #!/bin/bash
 # shellcheck source=/dev/null
 
+source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/config.sh
+
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/aliases.sh
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/keyboard.sh
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/prompt.sh
