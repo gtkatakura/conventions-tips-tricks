@@ -9,7 +9,7 @@ blue_text "Configuring AppImage dependencies"
 sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 
 green_text "Downloading LM Studio (AppImage)"
-sudo curl -L "https://installers.lmstudio.ai/linux/x64/0.3.16-8/LM-Studio-0.3.16-8-x64.AppImage" -o /opt/lm-studio.appimage
+sudo curl -L "https://installers.lmstudio.ai/linux/x64/0.3.22-1/LM-Studio-0.3.22-1-x64.AppImage" -o /opt/lm-studio.appimage
 sudo chmod +x /opt/lm-studio.appimage
 
 green_text "Creating the desktop shortcut"
