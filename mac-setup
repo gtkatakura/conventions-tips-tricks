@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo >> ~/.bash_profile
 echo "eval \"$(/opt/homebrew/bin/brew shellenv)\"" >> ~/.bash_profile
@@ -27,6 +27,7 @@ brew install --cask figma
 brew install --cask spotify
 brew install --cask obsidian
 brew install --cask notion
+brew install --cask 1password-cli
 
 brew install watchman
 brew install --cask android-studio
@@ -51,4 +52,4 @@ brew install charmbracelet/tap/crush
 brew install charmbracelet/tap/freeze
 brew install charmbracelet/tap/mods
 brew install charmbracelet/tap/sequin
-brew install charmbracelet/tap/vhs
+# brew install charmbracelet/tap/vhs
