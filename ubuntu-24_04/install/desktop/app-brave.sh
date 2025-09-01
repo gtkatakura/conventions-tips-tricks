@@ -11,5 +11,5 @@ echo \
   | sudo tee /etc/apt/sources.list.d/brave-browser.list > /dev/null
 
 green_text "Installing brave-browser"
-sudo apt-get update
-sudo apt-get install brave-browser -y
+sudo apt update
+sudo apt install brave-browser -y

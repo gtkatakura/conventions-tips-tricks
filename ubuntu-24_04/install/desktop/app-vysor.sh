@@ -6,5 +6,5 @@ echo \
   | sudo tee /etc/apt/sources.list.d/vysor.list > /dev/null
 
 green_text "Installing vysor"
-sudo apt-get update
-sudo apt-get install vysor -y
+sudo apt update
+sudo apt install vysor -y

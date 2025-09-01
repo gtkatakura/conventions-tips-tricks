@@ -11,5 +11,5 @@ echo \
   | sudo tee /etc/apt/sources.list.d/charles-proxy.list > /dev/null
 
 green_text "Installing charles-proxy"
-sudo apt-get update
-sudo apt-get install charles-proxy -y
+sudo apt update
+sudo apt install charles-proxy -y

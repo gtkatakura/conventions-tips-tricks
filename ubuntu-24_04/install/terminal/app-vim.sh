@@ -1,4 +1,4 @@
 #!/bin/bash
 
 green_text "Installing vim"
-sudo apt-get install vim -y
+sudo apt install vim -y

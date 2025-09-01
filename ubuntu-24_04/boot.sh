@@ -5,8 +5,8 @@ set -e
 
 echo -e "Begin installation (or abort with ctrl+c)..."
 
-sudo apt-get update >/dev/null
-sudo apt-get install -y git >/dev/null
+sudo apt update >/dev/null
+sudo apt install -y git >/dev/null
 
 echo "Cloning Takashi..."
 rm -rf ~/.local/share/takashi
