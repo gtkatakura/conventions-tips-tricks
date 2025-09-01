@@ -4,6 +4,8 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+source ~/.local/share/takashi/ubuntu-24_04/check-version.sh
+
 source ~/.local/share/takashi/bash/utils.bash
 
 # Desktop software and tweaks will only be installed if we're running Gnome
