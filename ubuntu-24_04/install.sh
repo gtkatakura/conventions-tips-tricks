@@ -20,6 +20,7 @@ else
 fi
 
 # Install terminal tools
+source ~/.local/share/takashi/shared/install/terminal.sh
 source ~/.local/share/takashi/ubuntu-24_04/install/terminal.sh
 
 if $RUNNING_GNOME; then
