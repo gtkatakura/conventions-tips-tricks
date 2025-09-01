@@ -14,3 +14,5 @@ if [ -n "$ALACRITTY_WINDOW_ID" ]; then
 else
   PS1="${GREEN}\w ${YELLOW}\$(parse_git_branch)${COLOR_OFF}$ "
 fi
+
+export PS1
