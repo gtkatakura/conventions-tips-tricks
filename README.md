@@ -1,11 +1,11 @@
 ### Setting ambient for Ubuntu 24.04
 
 ```bash
-wget -qO- https://ubuntu.gtkatakura.com | bash
+bash <(wget -qO- ubuntu.gtkatakura.com)
 ```
 
 ### Setting ambient for MacOS
 
 ```bash
-bash -c "$(curl -fsSL https://mac.gtkatakura.com)"
+bash <(curl -fsSL mac.gtkatakura.com)
 ```
