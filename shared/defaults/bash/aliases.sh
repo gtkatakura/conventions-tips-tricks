@@ -1,13 +1,10 @@
 #!/bin/bash
+# shellcheck source=/dev/null
 
 # AWS aliases
 alias awslocal="AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test AWS_DEFAULT_REGION=${DEFAULT_REGION:-$AWS_DEFAULT_REGION} aws --endpoint-url=http://${LOCALSTACK_HOST:-localhost}:4566"
 
 # Cursor aliases
-# function cursor {
-  # (nohup /opt/cursor.appimage --no-sandbox "$@" > /dev/null 2>&1 &)
-# }
-
 alias code='cursor'
 alias c='cursor .'
 
@@ -66,8 +63,11 @@ function checkip {
 }
 
 function reload() {
-  # shellcheck disable=SC1090
-  source ~/.bash_profile
+  if [ -f ~/.bash_profile ]; then
+    source ~/.bash_profile
+  elif [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+  fi
 }
 
 alias r='reload'
