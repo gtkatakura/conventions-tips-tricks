@@ -51,6 +51,8 @@ brew install orbstack
 brew install mise
 brew install gnupg
 brew install gh
+brew install lazygit
+brew install lazydocker
 
 sudo softwareupdate --instal-rosetta
 
