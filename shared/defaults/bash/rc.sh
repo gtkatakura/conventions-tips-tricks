@@ -3,3 +3,4 @@
 
 source ~/.local/share/takashi/shared/defaults/bash/aliases.sh
 source ~/.local/share/takashi/shared/defaults/bash/prompt.sh
+source ~/.local/share/takashi/shared/defaults/bash/telemetry.sh
