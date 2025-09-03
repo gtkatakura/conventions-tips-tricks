@@ -24,5 +24,3 @@ function update_all() {
 
   sudo snap refresh
 }
-
-export GIT_EDITOR='vim'
