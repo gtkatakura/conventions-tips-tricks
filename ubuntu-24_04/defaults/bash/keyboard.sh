@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Keyboard Configurations for:
+# - Spectrum TC-602 (OEX)
+# - Razer BlackWidow Ultimate 2016
+
 function keyboard_code {
  setxkbmap -model pc105 -layout us -variant alt-intl,euro,
 }
