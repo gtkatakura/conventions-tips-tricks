@@ -7,7 +7,6 @@ source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/config.sh
 
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/cursor.sh
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/keyboard.sh
-source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/prompt.sh
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/shell.sh
 
 source ~/.local/share/takashi/ubuntu-24_04/defaults/bash/android.sh

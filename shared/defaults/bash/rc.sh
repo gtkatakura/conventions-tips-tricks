@@ -2,3 +2,4 @@
 # shellcheck source=/dev/null
 
 source ~/.local/share/takashi/shared/defaults/bash/aliases.sh
+source ~/.local/share/takashi/shared/defaults/bash/prompt.sh
