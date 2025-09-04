@@ -5,6 +5,7 @@ alias cd='z'
 
 source ~/.local/share/takashi/shared/defaults/bash/rc.sh
 
+source ~/.local/share/takashi/macbook/defaults/bash/aliases.sh
 source ~/.local/share/takashi/macbook/defaults/bash/android.sh
 source ~/.local/share/takashi/macbook/defaults/bash/brew.sh
 source ~/.local/share/takashi/macbook/defaults/bash/prompt.sh
