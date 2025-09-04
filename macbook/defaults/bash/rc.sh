@@ -1,8 +1,6 @@
 #!/bin/bash
 # shellcheck source=/dev/null
 
-alias cd='z'
-
 source ~/.local/share/takashi/shared/defaults/bash/rc.sh
 
 source ~/.local/share/takashi/macbook/defaults/bash/init.sh
