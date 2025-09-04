@@ -63,10 +63,24 @@ function checkip {
 }
 
 function reload() {
-  if [ -f ~/.bash_profile ]; then
-    source ~/.bash_profile
-  elif [ -f ~/.bashrc ]; then
-    source ~/.bashrc
+  if [[ -n "$ZSH_VERSION" ]]; then
+    if [ -f ~/.zshrc ]; then
+      source ~/.zshrc
+    fi
+
+    if [ -f ~/.zprofile ]; then
+      source ~/.zprofile
+    fi
+  fi
+
+  if [[ -n "$BASH_VERSION" ]]; then
+    if [ -f ~/.bashrc ]; then
+      source ~/.bashrc
+    fi
+
+    if [ -f ~/.bash_profile ]; then
+      source ~/.bash_profile
+    fi
   fi
 }
 
