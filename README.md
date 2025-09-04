@@ -47,6 +47,7 @@ bash <(curl -fsSL mac.gtkatakura.com)
 ### 🎨 Charm.sh CLI Tools
 - **crush** - Create code screenshots
 - **freeze** - Generate images of code and terminal output
+- **glow** - Terminal markdown renderer
 - **mods** - AI for the command line
 - **sequin** - Generate sequences
 - **vhs** - Generate terminal recordings

@@ -10,4 +10,4 @@ echo \
 
 green_text "Installing charm tools"
 sudo apt update
-sudo apt install crush freeze mods sequin vhs -y
+sudo apt install crush freeze glow mods sequin vhs -y

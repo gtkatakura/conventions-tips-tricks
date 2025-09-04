@@ -58,6 +58,7 @@ sudo softwareupdate --instal-rosetta
 
 brew install charmbracelet/tap/crush
 brew install charmbracelet/tap/freeze
+brew install charmbracelet/tap/glow
 brew install charmbracelet/tap/mods
 brew install charmbracelet/tap/sequin
 brew install charmbracelet/tap/vhs
