@@ -16,5 +16,11 @@ else
   GREEN="\[\033[0;32m\]"
   YELLOW="\[\033[0;33m\]"
 
-  export PS1="${GREEN}\w ${YELLOW}\$(parse_git_branch)${COLOR_OFF}$ "
+  if [ -n "$ALACRITTY_WINDOW_ID" ]; then
+    CARET_ICON=$' \uf0a9'
+    SET_CWD_AS_WINDOW_TITLE="\[\e]0;\w\a\]"
+    export PS1="${SET_CWD_AS_WINDOW_TITLE}${GREEN}$CARET_ICON ${YELLOW}\$(parse_git_branch)${COLOR_OFF}$ "
+  else
+    export PS1="${GREEN}\w ${YELLOW}\$(parse_git_branch)${COLOR_OFF}$ "
+  fi
 fi
