@@ -37,6 +37,7 @@ bash <(curl -fsSL mac.gtkatakura.com)
 - **AWS CLI** - Command line interface for Amazon Web Services
 - **GitHub CLI (gh)** - Command line tool for GitHub
 - **jq** - Command-line JSON processor
+- **yq** - Command-line YAML processor
 - **Hyperfine** - Command-line benchmarking tool
 - **Pastel** - Command-line tool to generate, analyze and manipulate colors
 - **Heroku CLI** - Command line interface for Heroku platform

@@ -43,6 +43,8 @@ brew install --cask expo-orbit
 
 brew install --cask aws-vpn-client
 
+brew install jq
+brew install yq
 brew install eza
 brew install zoxide
 brew install docker
