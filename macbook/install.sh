@@ -62,3 +62,9 @@ brew install charmbracelet/tap/glow
 brew install charmbracelet/tap/mods
 brew install charmbracelet/tap/sequin
 brew install charmbracelet/tap/vhs
+
+# Benchmarking tool
+brew install hyperfine
+
+# Color manipulation CLI
+brew install pastel
